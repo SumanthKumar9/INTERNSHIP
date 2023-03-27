@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIFFERENT POSITIONS</title>
+        <style>
+            body{
+                background-color: black;
+                color: violet;
+            }
+            p{
+                color: rgb(224, 37, 193);
+            }
+            div{
+                border: solid 2px aqua;
+            }
+            #static{
+                height: 100px;
+                width: 350px;
+                background-color: rgb(192, 11, 11);
+                position: static;
+                margin-bottom: 50px;
+            }
+            #fixed{
+                height: 100px;
+                width: 350px;
+                background-color: yellow;
+                position: fixed;
+                bottom: 0px;
+                right: 50px;
+            }
+            #image{
+                position:-webkit-sticky;
+                position: sticky;
+                top: 0;
+                right: 0;
+                width: 100px;
+                margin-bottom: 50px;
+            }
+            #relative{
+                position: relative;
+                width: 400px;
+                height: 300px;
+                left: 100px;
+            }
+            #absolute{
+                height: 100px;
+                width: 100px;
+                background-color: violet;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+            #space{
+                position: relative;
+                padding-bottom: 2000px;
+                border-color: rgb(3, 3, 3);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="static">
+            <p>This div is positiond using static position</p>
+        </div>
+        <div id="fixed">
+            <p>This div is positiond using the fixed position</p>
+        </div>
+       <div id="image">
+           im sticky
+       </div>
+        <div id="relative">
+            <p>This div positiond using the relative position</p>
+            <div id="absolute">
+                <p>This is absoulte</p>
+            </div>
+        </div>
+        <div id="space"></div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navbar</title>
+        <style>
+            ul{
+                list-style-type: none;
+                width: 20%;
+                position: fixed;
+                /* overflow: scroll; */
+                /* height: 10%; */
+                background-color: grey;
+                margin:0;
+                padding: 0;;
+                border:1px solid black
+            }
+            li{
+                border-bottom: 1px solid black;
+            }
+            li:last-child{
+                border-bottom:none;
+            }
+            li a{
+                text-decoration: none;
+                color: black;
+                display: block;
+                widows: 100px;
+                padding: 5px 10px;
+            }
+            li a:hover{
+                background-color:white;
+            }
+            .active{
+                background-color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#Hockey">Hockey</a></li>
+            <li><a href="Cricket">Cricket</a></li>
+            <li><a href="Carroms">Carroms</a></li>
+            <li><a href="Volleyball">Volleyball</a></li>
+        </ul>
+    </body>
+</html>

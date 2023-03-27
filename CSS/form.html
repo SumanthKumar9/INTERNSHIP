@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS FORMS
+        </title>
+        <style>
+            .form{
+                width: 100%;
+                background-color: wheat;
+            }
+            form{
+                padding: 10px 14px;
+                margin-top: 20px;
+            }
+            input[type="text"],select{
+                padding: 12px 10px;
+                margin: 7px 7px 20px 10px;
+                width: calc(100% - 5px);
+                box-sizing: border-box;
+                border-radius: 4px;
+                border: 1px solid white;
+            }
+            label{
+                margin-left: 10px;
+                font-style: bold;
+            }
+            input[type="submit"]{
+                margin: 10px 10px;
+                width: calc(100% - 5px);
+                padding: 7px 10px;
+                background-color: #45c249;
+                color: ivory;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover{
+                background-color: #4aaf4e;
+            }
+            input[type="search"]{
+                margin: 10px;
+                width: calc(100% - 5px);
+                }
+        </style>
+    </head>
+    <body>
+        <b>Styling Forms using CSS</b>
+        <div class="form">
+            <form class="frm">
+                <label for="fname">First Name</label><br>
+                <input id="fanme" name="firstName" type="text" placeholder="Your Name..."><br>
+                <label for="lname">Last Name</label><br>
+                <input id="lanme" name="lastName" type="text" placeholder="Your Last Name..."><br>
+                <label for="country">Country</label><br>
+                <select name="country" id="country">
+                    <option value="india">India</option>
+                    <option value="england">England</option>
+                    <option value="auis">Australia</option>
+                </select><br>
+                <input type="submit" value="Submit"><br>
+                <input type="search" placeholder="search.." class="search">
+            </form>
+        </div>
+    </body>
+</html>

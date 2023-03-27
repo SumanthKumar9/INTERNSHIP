@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DROPDOWN
+        </title>
+        <style>
+            ul{
+                list-style-type: none;
+                background-color: rgb(231, 219, 54);
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                float: left;
+                padding: 14px 16px;
+                display: block;
+                
+            }
+            li a{
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                color: black;
+            }
+            li:hover{
+                background-color: yellow;
+            }
+            .dropdown-content{
+                display: none;
+                margin-top: 14px;
+                /* display: block; */
+                position: absolute;
+                z-index: 1;
+                background-color: wheat;
+                width: 140px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            .dropdown{
+                right: 0;
+            }
+            .dropdown-content a{
+                text-align: left;
+                font-size: medium;
+                color: rgb(14, 13, 12);
+                padding: 14px 16px;
+            }
+            .dropdown-content a:hover{
+                color: wheat;
+                background-color: rgb(100, 76, 31);}
+            .dropdown-text{
+                display: none;
+                /* height: 50px;
+                width: 40px; */
+                background-color: wheat;
+                position: absolute;
+                z-index: 1;
+            }
+            .dropdown2:hover .dropdown-text{
+                display: block;
+            } 
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><A href="#Home">Home</A></li>
+            <li><A href="#volleball">Volleyball</A></li>
+            <li><A href="#hockey">Cricket</A></li>
+            <li><A href="#cricket">Carroms</A></li>
+            <li><A href="#carrom">Hockey</A></li>
+            <li class="dropdown">
+                <A href="javascript:void(0)" class="drpbtn">Dropdown</A>
+                <div class="dropdown-content">
+                    <a href="#linl">Link1</a>
+                    <a href="#linl">Link2</a>
+                    <a href="#linl">Link3</a>
+                </div> 
+            </li>
+        </ul>
+        <p>mouse hover on the following heading</p>
+        <div class="dropdown2">
+            <h1 id="#text">Hello!</h1>
+            <div class="dropdown-text">
+                <p>Hello Thaere!</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

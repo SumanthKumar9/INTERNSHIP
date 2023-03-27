@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLOAT</title>
+        <style>
+            ul{
+                background-color: rgb(228, 130, 130);
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                overflow: hidden;
+            }
+            li{
+                
+                float: left;
+                padding: 14px 16px;
+                
+            }
+            li a{
+                text-decoration: none;
+                color:white;
+               display: block;
+                text-align: center;
+               
+            }
+            li:hover:not(:last-child){
+                background-color: rgb(66, 64, 64);
+            }
+            .inline{
+                display: inline-block;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .voll{
+                background-color: rgb(13, 112, 151);
+                color:black;
+                text-align: center;
+                float: right;
+            }
+            @media screen and (max-width: 600px) {
+                ul.inline li,ul.inline li.voll, ul.navbar li {float: none;}{float: none;}
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Hockey">Hockey</a></li>
+            <li><a href="Cricket">Cricket</a></li>
+            <li><a href="Carroms">Carroms</a></li>
+            <li><a href="Volleyball">Volleyball</a></li>
+        </ul>
+        <ul class="inline">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Hockey">Hockey</a></li>
+            <li><a href="Cricket">Cricket</a></li>
+            <li><a href="Carroms">Carroms</a></li>
+            <li class="voll"><a href="#Volleyball" >Volleyball</a></li>
+        </ul>
+    </body>
+</html>
