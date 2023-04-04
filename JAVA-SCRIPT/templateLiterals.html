@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TemplateLiterals</title>
+    </head>
+    <body>
+        <p>The template TemplateLiterals are allow variabls in a strings and expressions also and we can aslo add the html tags also</p>
+        <p id="template"></p>
+        <P>Without using the tempalte Literals</P>
+        <p id="arrays"></p>
+        <script>
+            let header="Template Literals";
+            let list=["java","c","python"];
+            let html=`<h1>${header}</h1><ul>`;
+            for (const x of list){
+                html+=`<li>${x}</li>`;
+            }
+            html+=`</ul>`;
+            document.getElementById("template").innerHTML=html;
+            const technologies=["java","c++","kotlin"];
+            let text="<ul>";
+            for (let i=0;i<technologies.length;i++){
+                text+="<li>"+technologies[i]+"</li>";
+            }
+            text+="</ul>"
+            document.getElementById("arrays").innerHTML=text;
+        </script>
+    </body>
+</html>

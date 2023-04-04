@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loops</title>
+    </head>
+    <body>
+        <h2>JavaScript For Loop</h2>
+        <p id="demo"></p>
+        <h2>JavaScript For In Loop</h2>
+        <p>The for in statement loops through the properties of an object:</p>
+        <p id="demo2"></p>
+        <h2>JavaScript For Of Loop</h2>
+        <p>The for of statement loops through the values of any iterable object:</p>
+        <p id="demo3"></p>
+        <h2>JavaScript While Loop</h2>
+        <p id="demo4"></p>
+        <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        let text = "";
+        //for loop
+        for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        //for in loop
+        let txt2 = "";
+        for (let x in person) {
+            txt2 += x + " ";
+        }
+        document.getElementById("demo2").innerHTML = txt2;
+
+        
+        //for of loop
+        const cars2 = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        let text3 = "";
+        for (let y of cars2) {
+            text3 += y + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = text3;
+
+        //while loop
+        let text4 = "";
+        let s = 0;
+        while (s < 10) {
+        text += "<br>The number is " + s;
+        s++;
+        }
+        document.getElementById("demo").innerHTML = text4;
+        </script>
+    </body>
+</html>

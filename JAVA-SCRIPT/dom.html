@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <h1>The JAVA SCRIPT DOM</h1>
+        <p id="demo"></p>
+        <h1>There are several dom methods are there some of them are</h1>
+        <p id="demo2"></p>
+        <p class="text">by id</p>
+        <p class="te">by class</p>
+        <p class="text">by tagname</p>
+        <p class="text">by CSS selectors</p>
+        <p id="demo3"></p>
+        <P><b>Finding html elemets by css selectors</b></P>
+        <p id="demo4"></p>
+        <img src="img_girl.jpeg" id="image" height="200px" width="200px">
+        <p>click on the following button to change the above image</p>
+        <button onclick="attChange()">click</button>
+        <P id="blue">click the following button to change the colour of this text to blue</P>
+        <button onclick="document.getElementById('blue').style.color='blue'" >click me</button>
+        <p><b>JS events:onmouseover(),onmouseout(),onmouseup(),onmousedown()</b></p>
+        <div id="mouse" style="height: 200px;width: 200px;background:blue;" onmouseover="mOver(this)" onmouseout="mOout(this)">
+        </div>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Click Me</div>
+        <br><br>
+        <div id="div34">
+            <P>my name is </P>
+        </div>
+    </body>
+    <script>
+        document.getElementById("demo").innerHTML="Document Object Model";
+
+        const element=document.getElementsByTagName("h1");
+
+        document.getElementById("demo2").innerHTML="The first h1 tag is"+element[0].innerHTML;
+
+        const element2=document.getElementsByClassName("text");
+
+        document.getElementById("demo3").innerHTML="The first element with text class is  "+element2[0].innerHTML;
+
+        const x=document.querySelectorAll("p.te");
+
+        document.getElementById("demo4").innerHTML="The p element with class name te is:"+" "+x[0].innerHTML;
+
+        function attChange(){
+            document.getElementById("image").src ="login-image.jpg";
+        }
+
+        function mOout(x){
+            x.innerHTML="mouse over me";
+            x.style.background="blue";
+        }
+        function mOver(x){
+            x.innerHTML="thank you";
+            x.style.background="red";
+        }
+        function mDown(obj) {
+            obj.style.backgroundColor = "blue";
+            obj.innerHTML = "Release Me";
+        }
+        function mUp(obj) {
+            obj.style.backgroundColor="#D94A38";
+            obj.innerHTML="Thank You";
+        }
+        // const para = document.createElement("p");
+        // const node = document.createTextNode("This is new.");
+        // para.appendChild(node);
+        // const element = document.getElementById("div34");
+        // element.appendChild(para);
+    </script>
+</html>

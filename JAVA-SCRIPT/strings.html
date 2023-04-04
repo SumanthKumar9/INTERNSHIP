@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Strings</title></head>
+<body>
+
+<h1>JavaScript Strings</h1>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo"></p>
+<P>The lenght of the string can be find using the length function</P>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p><b>several string methods are</b></p>
+<pre>
+    String length
+    String slice()
+    String substring()
+    String substr()
+    String replace()
+    String replaceAll()
+    String toUpperCase()
+    String toLowerCase()
+</pre>
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+//lenght()
+document.getElementById("demo2").innerHTML="The length of the string:IT's alright is " +answer1;
+
+//slice()
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo3").innerHTML = part; 
+//substring()
+let part2 = text.slice(7,13);
+document.getElementById("demo4").innerHTML = part2; 
+//substr()
+let part3 = text.slice(7,4);
+document.getElementById("demo4").innerHTML = part3; 
+//replace()
+let text2 = "Please visit Microsoft!";
+let newText = text2.replace("Microsoft", "W3Schools");
+document.getElementById("demo4").innerHTML = newText;
+//uppercase()
+let text3 = "Hello World!";
+let text4 = text3.toUpperCase();
+document.getElementById("demo5").innerHTML = text4; 
+//lowercase()
+let text5 = "Hello World!";
+let text6 = text5.toUpperCase();
+document.getElementById("demo6").innerHTML = text5; 
+</script>
+
+</body>
+</html>
+
+

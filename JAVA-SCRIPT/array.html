@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("lemon")
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+
+document.getElementById("demo2").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+
+document.getElementById("demo3").innerHTML = fruits.toString();
+document.getElementById("demo4").innerHTML = fruits.splice(2, 0, "Lemon", "Kiwi");
+</script>
+
+</body>
+</html>
+
